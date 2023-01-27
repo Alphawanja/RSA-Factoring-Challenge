@@ -11,7 +11,6 @@ def factor(number, test_num):
 
 
 with open(argv[1], mode="r", encoding="UTF-8") as f:
-
     for line in f:
         number = int(line)
         if number % 2 == 0:
@@ -23,8 +22,6 @@ with open(argv[1], mode="r", encoding="UTF-8") as f:
                     factor(number, test_num)
                     break
 
-
-"""
 
 def factor():
     with open(argv[1]) as f:
@@ -44,5 +41,5 @@ def factor():
             if num % i != 0:
                 print("{}={}*1".format(num, num))
 
-"""
+
 factor()
